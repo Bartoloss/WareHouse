@@ -42,6 +42,11 @@ namespace Warehouse.App.Common
             Items.Remove(item);
         }
 
+        public void ViewAllItems()
+        {
+
+        }
+
         public List<T> GetAllItems()
         {
             return Items;
@@ -57,9 +62,6 @@ namespace Warehouse.App.Common
             return entity.Id;
         }
 
-        public void DeleteItem(T item)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

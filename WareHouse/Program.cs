@@ -39,10 +39,10 @@ namespace Warehouse
                     //    var detailId = itemService.ItemDetailSelectionView();
                     //    itemService.ItemDetailView(detailId);
                     //    break;
-                    //case '4':
-                    //    var typeId = itemService.ItemTypeSelectionView();
-                    //    itemService.ItemsByTypeIdView(typeId);
-                    //    break;
+                    case '4':
+                        var typeId = itemManager.ViewAllItems();
+                        itemService.ItemsByTypeIdView(typeId);
+                        break;
                     default:
                         Console.WriteLine("Action you entered does not exist");
                         break;

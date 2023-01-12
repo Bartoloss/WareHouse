@@ -1,6 +1,7 @@
 ﻿using WareHouse.App.Concrete;
 using WareHouse.Domain.Entity;
 
+
 namespace Warehouse.App.Managers
 {
     public class ItemManager
@@ -34,13 +35,19 @@ namespace Warehouse.App.Managers
 
         public int RemoveItem()
         {
-            Console.WriteLine("Please select item type:");
-           
+            Console.WriteLine("Please enter id for item you want to remove:");
             var operation = Console.ReadKey();
             int typeId;
             Int32.TryParse(operation.KeyChar.ToString(), out typeId);
 
             return typeId;
+        }
+
+        public void ViewAllItems()
+        {
+            List<Item> toShow = new List<Item>();
+            Console.WriteLine(toShow.ToStringTable(new[] { "Id", "Name" }, a=> a.Id, a=> a.Name));
+            
         }
     }
 }
