@@ -12,6 +12,6 @@ namespace Warehouse.App.Abstract
         List<T> GetAllItems ();
         int AddItem(T item);
         int UpdateItem(T item);
-        void DeleteItem(T item);
+        void RemoveItem(T item);
     }
 }

@@ -57,5 +57,9 @@ namespace Warehouse.App.Common
             return entity.Id;
         }
 
+        public void DeleteItem(T item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
